@@ -1,10 +1,14 @@
-Prerequisites
+Cloud Native Monitoring Python App on K8s!
+
+Prerequisites:
+
 Before starting the project, make sure you have the following prerequisites:
 
 AWS Account with programmatic access and AWS CLI configured.
 Python 3 installed.
 Docker and Kubectl installed.
 Code editor (e.g., VSCode).
+
 Part 1: Deploying the Flask application locally
 Step 1: Clone the code
 Step 2: Install dependencies
@@ -12,7 +16,8 @@ The application requires the psutil, Flask, Plotly, and boto3 libraries. Install
 Step 3: Run the application
 To run the application, navigate to the root directory of the project and execute the following command:
 $ python3 app.py
-Part 2: Dockerizing the Flask application
+
+Part 2: Dockerizing the Flask application:
 Step 1: Create a Dockerfile
 Create a Dockerfile in the root directory of the project with the provided contents.
 
@@ -25,14 +30,14 @@ $ docker run -p 5000:5000 <image_name>
 
 
 
-Part 3: Pushing the Docker image to ECR
+Part 3: Pushing the Docker image to ECR:
 Step 1: Create an ECR repository
 Create an ECR repository using the provided Python script.
 
 Step 2: Push the Docker image to ECR
-Push the Docker image to ECR using the appropriate docker push command.
+Push the Docker image to ECR using the appropriate Docker push command.
 
-Part 4: Creating an EKS cluster and deploying the app using Python
+Part 4: Creating an EKS cluster and deploying the app using Python:
 Step 1: Create an EKS cluster
 Create an EKS cluster and add a node group.
 
